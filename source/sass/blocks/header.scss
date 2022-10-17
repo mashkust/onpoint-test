@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  padding: 30px 100px;
+  touch-action: none;
+  z-index: 5;
+
+  a{
+    margin-right: 20px;
+  }
+
+  span{
+    padding-left: 20px;
+    border-left: 1px solid;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing:3px;
+    font-weight: 200;
+    text-align: start;
+    font-family: "DINPro-Light";
+    text-transform: uppercase;
+  }
+}

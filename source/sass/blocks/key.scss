@@ -1,0 +1,13 @@
+.key {
+  display: flex;
+  border-radius: 30px;
+  background-color: $color-default-white;
+  padding: 40px 40px 40px;
+  box-shadow: 0 4px 28px rgba(123,151,158,.25);
+  position: relative;
+
+  &__img{
+    position: absolute;
+    top: -30px;
+  }
+}

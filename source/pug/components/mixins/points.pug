@@ -1,0 +1,6 @@
+mixin points(points,page)
+  ul.points-list(class=page)
+    each el in points
+      li.points-list__item
+        span !{el.number}
+        p !{el.text}

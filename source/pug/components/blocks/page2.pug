@@ -1,0 +1,43 @@
+mixin page2()
+  -
+    const sperms = [
+      {
+        path: "content",
+        image: "sperms",
+        format: "png",
+        width: "1000px",
+        height: "1000px",
+        alt: "Сперматозоид",
+      },
+      {
+        path: "content",
+        image: "sperms",
+        format: "png",
+        width: "700px",
+        height: "700px",
+        alt: "Сперматозоид",
+      },
+      {
+        path: "content",
+        image: "sperms",
+        format: "png",
+        width: "300px",
+        height: "300px",
+        alt: "Сперматозоид",
+      },
+    ]
+
+  .page2(class = "slide" id = "2")
+    h3 Текст сообщения
+    .container
+      .container-scroll
+        +img("content", "btn", "png", "20px","35px","Скролл", 'scroll-bar')
+        .line(id = 'scroll-line')
+      .container-text
+        .container-text__wrapper
+          .container-paragraph
+            p <b>Lorem ipsum dolor sit amet</b>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua. Duis ut&nbsp;diam quam nulla. Mauris in&nbsp;aliquam sem fringilla ut&nbsp;morbi tincidunt. Vitae aliquet nec ullamcorper sit amet risus nullam eget felis. Nulla pharetra diam sit amet nisl. Eget nulla facilisi etiam dignissim diam quis enim lobortis. Est sit amet facilisis magna. Neque laoreet suspendisse interdum consectetur libero&nbsp;id. Nec ullamcorper sit amet risus nullam eget felis eget. Mollis aliquam ut&nbsp;porttitor leo a&nbsp;diam sollicitudin tempor&nbsp;id. Euismod quis viverra nibh cras pulvinar mattis nunc. Massa massa ultricies mi&nbsp;quis. Sit amet massa vitae tortor condimentum lacinia. Et&nbsp;malesuada fames ac&nbsp;turpis egestas integer eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere.
+            p Amet justo donec enim diam vulputate ut&nbsp;pharetra sit. Risus ultricies tristique nulla aliquet enim tortor at&nbsp;auctor. Velit sed ullamcorper morbi tincidunt ornare massa. Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim diam quis enim. Gravida neque convallis a&nbsp;cras. Ut&nbsp;enim blandit volutpat maecenas volutpat. Mauris sit amet massa vitae tortor condimentum lacinia quis vel.
+    .container-img
+      each el in sperms
+        +img(el.path, el.image, el.format, el.width , el.height , el.alt)

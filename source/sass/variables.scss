@@ -1,0 +1,25 @@
+// Colors
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// https://www.htmlcsscolor.com/hex/334482
+
+$color-summer-sky:                  #3DC1FD;
+$color-anakiwa:                     #8CC9E8;
+$color-brilliant-rose:              #FF6A9F;
+$color-mulberry:                    #cf578d;
+
+// Typography
+
+$fz-default:                        16px;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Animation
+
+$tf-default:                        ease;
+$trans-default:                     1s $tf-default;
+

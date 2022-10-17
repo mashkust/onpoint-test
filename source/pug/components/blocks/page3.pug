@@ -1,0 +1,65 @@
+mixin page3()
+  -
+    const img = [
+      {
+        path: "content",
+        image: "bottle",
+        format: "png",
+        width: "230px",
+        height: "500px",
+        alt: "Бутылка",
+      },
+      {
+        path: "content",
+        image: "5",
+        format: "png",
+        width: "80px",
+        height: "80px",
+        alt: "Пузырь",
+      },
+      {
+        path: "content",
+        image: "6",
+        format: "png",
+        width: "150px",
+        height: "150px",
+        alt: "Пузырь",
+      },
+      {
+        path: "content",
+        image: "7",
+        format: "png",
+        width: "50px",
+        height: "50px",
+        alt: "Пузырь",
+      },
+      {
+        path: "content",
+        image: "8",
+        format: "png",
+        width: "100px",
+        height: "100px",
+        alt: "Пузырь",
+      },
+      {
+        path: "content",
+        image: "2",
+        format: "png",
+        width: "130px",
+        height: "130px",
+        alt: "Пузырь",
+      },
+    ]
+
+  .page3(class = "slide" id = "3")
+    .text
+      h3 Ключевое сообщение
+      h1 Brend<b>xy</b>
+    .keys
+      +key("first","icon1",'Ehicula ipsum a&nbsp;arcu cursus vitae. Eu&nbsp;non diam phasellus vestibulum lorem sed risus ultricies')
+      +key("second","icon2",'A&nbsp;arcu cursus vitae')
+      +btn({iconUrl:"plus", textSpan:"Подробнее"})(class="third")
+    .container-img
+      each el in img
+        +img(el.path, el.image, el.format, el.width , el.height , el.alt)
+    +popup()

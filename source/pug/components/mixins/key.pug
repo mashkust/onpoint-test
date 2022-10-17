@@ -1,0 +1,5 @@
+mixin key(classNumber,iconUrl,text)
+  .key(class=classNumber)
+    span.key__img
+      +img("content", iconUrl, "png", "60px","60px","Иконка")
+    p.key__text!=text

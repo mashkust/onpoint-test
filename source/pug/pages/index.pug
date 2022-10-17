@@ -1,0 +1,17 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "OnPoint"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "index.html"
+
+block main
+  main
+    div(class="slider-container")
+      +page1()
+      +page2()
+      +page3()

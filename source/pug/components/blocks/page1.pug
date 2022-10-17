@@ -1,0 +1,53 @@
+mixin page1()
+  -
+    const img = [
+      {
+        path: "content",
+        image: "bacteria1",
+        format: "png",
+        width: "200px",
+        height: "200px",
+        alt: "Бактерия",
+      },
+      {
+        path: "content",
+        image: "bacteria2",
+        format: "png",
+        width: "50px",
+        height: "50px",
+        alt: "Бактерия",
+      },
+      {
+        path: "content",
+        image: "bacteria3",
+        format: "png",
+        width: "50px",
+        height: "50px",
+        alt: "Бактерия",
+      },
+      {
+        path: "content",
+        image: "bacteria4",
+        format: "png",
+        width: "100px",
+        height: "100px",
+        alt: "Бактерия",
+      },
+      {
+        path: "content",
+        image: "sperm",
+        format: "png",
+        width: "500px",
+        height: "100px",
+        alt: "Сперматозоид",
+      },
+    ]
+
+  .page1(class = "slide" id = "1")
+    .text
+      h3 Привет,
+      h1 это <b>не</b> коммерческое задание
+      +btn({iconUrl:"arrow", textSpan:"Что дальше?"})
+    .container-img
+        each el in img
+         +img(el.path, el.image, el.format, el.width , el.height , el.alt)

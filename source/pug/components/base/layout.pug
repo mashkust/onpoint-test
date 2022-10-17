@@ -1,0 +1,31 @@
+doctype html
+
+include ../components
+
+block variables
+
+html(lang="ru")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="minimum-scale=1.0; maximum-scale=1.0; initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="ProjectName — описание")
+
+    //- используйте только для шрифта находящегося на первом экране
+    //- link(rel="preload", href="fonts/placeholder.woff2", as="font", crossorigin="anonymous")
+    link(rel="stylesheet", href="css/style.min.css")
+
+  body
+    .wrapper(class=wrapperMods)
+      if (hasHeader)
+        +header(headerMods, currentUrl)
+
+      block main
+
+      if (hasFooter)
+        +footer(footerMods)
+
+    block modals
+
+    script(src="js/main.min.js")

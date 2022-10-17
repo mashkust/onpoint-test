@@ -1,0 +1,41 @@
+mixin popup()
+  -
+    const points1 = [
+      {
+        number: "01",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      },
+      {
+        number: "02",
+        text: "Faucibus pulvinar elementum integer enim",
+      },
+      {
+        number: "03",
+        text: "Faucibus pulvinar elementum integer enim",
+      },
+    ]
+  -
+    const points2 = [
+      {
+        number: "04",
+        text: "Mi bibendum neque egestas congue quisque egestas diam",
+      },
+      {
+        number: "05",
+        text: "Venenatis lectus magna fringilla urna",
+      },
+      {
+        number: "06",
+        text: "Venenatis lectus magna fringilla urna ",
+      },
+    ]
+
+  .popup
+    a(href="", class="close")
+      +img("content", "close", "png", "35px","35px","Закрыть")
+    .container
+      h3 Преимущества
+      h1 Brend<b>xy</b>
+      +points(points1,"str1")
+      +points(points2,"str2")
+      +switch()

@@ -1,0 +1,38 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  margin: 0px 0;
+  padding: 12px 17px;
+  position: relative;
+  z-index: 4;
+
+  color: $color-default-black;
+
+  background-color: $color-brilliant-rose;
+  border: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+
+  border-radius: 40px;
+  cursor: pointer;
+
+  .icon{
+    color: $color-default-white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: $color-default-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  }
+  span{
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: "DINPro-Medium";
+    padding-right: 20px;
+  }
+}
