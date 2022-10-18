@@ -5,13 +5,16 @@ const blockHidden = document.querySelector('.page2').querySelector('.container-i
 const nextButton = document.querySelector('.page1').querySelector('.btn');
 
 const showBlock = () => {
-  blockHidden.classList.add('show');
+  blockHidden.classList.remove('show');
+  setTimeout(() => {
+    blockHidden.classList.add('show');
+  }, 10);
 };
 
 const getSwipeDirection = (start, end) => {
   if (start && end) {
     const diff = start - end;
-    if (Math.abs(diff) > 50) {
+    if (Math.abs(diff) > 100) {
       return diff < 0 ? 'left' : 'right';
     }
     return false;
@@ -44,7 +47,7 @@ const detectElementSwipe = (el) => {
       if (result) {
         makeSwipe(result, Number(el.id));
         [startChoord, endChoord] = [null, null];
-        if (result === 'right') {
+        if (result === 'right' && el.id === '1') {
           showBlock();
         }
       }
@@ -58,7 +61,9 @@ export const clickHome = () => {
   linkHome.addEventListener('click', (evt) => {
     evt.preventDefault();
     sliderContainer.style.transform = 'translateX(0px)';
-    blockHidden.classList.remove('show');
+    setTimeout(() => {
+      blockHidden.classList.remove('show');
+    }, 500);
   });
 };
 

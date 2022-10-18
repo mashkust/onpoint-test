@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
+  font-family: $ff-dinpro;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -32,7 +32,7 @@ body {
 }
 
 a {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color:$color-transparent;
   -webkit-tap-highlight-color: transparent;
   color: $color-default-black;
   text-decoration: none;

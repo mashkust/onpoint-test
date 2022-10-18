@@ -22,7 +22,6 @@ export const processSlider = () => {
 
   arrowLeft.addEventListener('click', (evt) => {
     evt.preventDefault();
-    // if (transitNext.classList.contains('active')) {
     transitNext.classList.remove('active');
     transitBack.classList.add('active');
     str2.style.display = 'none';
